@@ -6,11 +6,6 @@ import (
 	"net/http"
 )
 
-type Page struct {
-	Title string
-	Body  []byte
-}
-
 func handler(w http.ResponseWriter, r *http.Request) {
 	urlPath := r.URL.Path[1:]
 
